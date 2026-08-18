@@ -1,0 +1,1048 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  >
+
+  <meta
+    name="theme-color"
+    content="#8fd8ff"
+  >
+
+  <meta
+    name="description"
+    content="An animated birthday experience made for my gorgeous wife."
+  >
+
+  <title>Hi Babyyy — A Birthday Story</title>
+
+  <!-- =========================================================
+       FIVE CINNAMOROLL REFERENCE PHOTOS
+       These are kept as visual reference assets.
+       ========================================================= -->
+
+  <link
+    rel="preload"
+    as="image"
+    href="assets/references/reference-01.jpg"
+  >
+
+  <link
+    rel="preload"
+    as="image"
+    href="assets/references/reference-02.jpg"
+  >
+
+  <link
+    rel="preload"
+    as="image"
+    href="assets/references/reference-03.jpg"
+  >
+
+  <link
+    rel="preload"
+    as="image"
+    href="assets/references/reference-04.jpg"
+  >
+
+  <link
+    rel="preload"
+    as="image"
+    href="assets/references/reference-05.jpg"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="app" class="app">
+
+  <!-- =========================================================
+       FIVE SUPPLIED CINNAMOROLL REFERENCES
+       They remain inside the repository for visual direction.
+       The animated character itself is HTML/CSS drawn.
+       ========================================================= -->
+
+  <div class="reference-assets" aria-hidden="true">
+
+    <img
+      src="assets/references/reference-01.jpg"
+      alt="Cinnamoroll reference 1"
+    >
+
+    <img
+      src="assets/references/reference-02.jpg"
+      alt="Cinnamoroll reference 2"
+    >
+
+    <img
+      src="assets/references/reference-03.jpg"
+      alt="Cinnamoroll reference 3"
+    >
+
+    <img
+      src="assets/references/reference-04.jpg"
+      alt="Cinnamoroll reference 4"
+    >
+
+    <img
+      src="assets/references/reference-05.jpg"
+      alt="Cinnamoroll reference 5"
+    >
+
+  </div>
+
+
+  <!-- Film grain -->
+
+  <div class="grain"></div>
+
+
+  <!-- Decorative starfield -->
+
+  <div
+    id="stars"
+    class="stars"
+    aria-hidden="true"
+  ></div>
+
+
+  <!-- Dynamic particles -->
+
+  <div
+    id="particles"
+    class="particles"
+    aria-hidden="true"
+  ></div>
+
+
+  <!-- Scene transition -->
+
+  <div
+    id="transition"
+    class="transition"
+    aria-hidden="true"
+  >
+    <span></span>
+  </div>
+
+
+  <!-- =========================================================
+       TOP BAR
+       ========================================================= -->
+
+  <header
+    class="topbar"
+    aria-label="Experience controls"
+  >
+
+    <div class="brand">
+
+      <span class="brand-dot"></span>
+
+      <span>
+        for my love
+      </span>
+
+    </div>
+
+
+    <div class="controls">
+
+      <button
+        id="soundBtn"
+        class="icon-btn"
+        type="button"
+        aria-label="Toggle sound"
+      >
+        ♫
+      </button>
+
+
+      <div
+        class="progress"
+        aria-label="Story progress"
+      >
+        <span id="progressFill"></span>
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- =========================================================
+       STORY
+       ========================================================= -->
+
+  <main id="story" class="story">
+
+
+    <!-- =======================================================
+         INTRO
+         ======================================================= -->
+
+    <section
+      class="scene intro active"
+      data-scene="intro"
+      aria-label="Introduction"
+    >
+
+      <div class="intro-glow"></div>
+
+
+      <div class="intro-copy">
+
+        <p class="eyebrow">
+          a little birthday surprise
+        </p>
+
+
+        <h1>
+          hi <em>babyyy</em>
+        </h1>
+
+
+        <p class="subline">
+          I made a tiny world just for you.
+        </p>
+
+
+        <button
+          id="startBtn"
+          class="primary-btn"
+          type="button"
+        >
+          Open my surprise
+          <span>✦</span>
+        </button>
+
+      </div>
+
+
+      <!-- CSS animated Cinnamoroll-inspired character -->
+
+      <div
+        class="hero-cinna"
+        aria-hidden="true"
+      >
+
+        <div class="cinna shadow"></div>
+
+        <div class="cinna">
+
+          <div class="ear ear-l"></div>
+          <div class="ear ear-r"></div>
+
+          <div class="head">
+
+            <i class="eye eye-l"></i>
+            <i class="eye eye-r"></i>
+
+            <i class="cheek cheek-l"></i>
+            <i class="cheek cheek-r"></i>
+
+            <i class="mouth">
+              ⌣
+            </i>
+
+          </div>
+
+
+          <div class="body">
+
+            <span class="paw"></span>
+
+            <span class="paw paw-r"></span>
+
+            <span class="tail"></span>
+
+          </div>
+
+        </div>
+
+
+        <div class="spark s1">✦</div>
+        <div class="spark s2">✧</div>
+        <div class="spark s3">✦</div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =======================================================
+         STAGE 1 — CAKE
+         ======================================================= -->
+
+    <section
+      class="scene stage stage-one"
+      data-scene="one"
+      aria-label="Cinnamon Roll with birthday cake"
+    >
+
+      <div class="sky"></div>
+
+      <div class="cloud c1"></div>
+      <div class="cloud c2"></div>
+
+
+      <div class="scene-title">
+
+        <span>01</span>
+
+        <h2>
+          For you, my love
+        </h2>
+
+      </div>
+
+
+      <div class="stage-character cake-character">
+
+        <div class="cinna big">
+
+          <div class="ear ear-l"></div>
+          <div class="ear ear-r"></div>
+
+          <div class="head">
+
+            <i class="eye eye-l"></i>
+            <i class="eye eye-r"></i>
+
+            <i class="cheek cheek-l"></i>
+            <i class="cheek cheek-r"></i>
+
+            <i class="mouth happy">
+              ⌣
+            </i>
+
+          </div>
+
+
+          <div class="body">
+
+            <span class="paw holding"></span>
+
+            <span class="paw paw-r"></span>
+
+            <span class="tail"></span>
+
+          </div>
+
+        </div>
+
+
+        <!-- Birthday cake -->
+
+        <div class="cake">
+
+          <div class="candle c1">
+            <b></b>
+          </div>
+
+          <div class="candle c2">
+            <b></b>
+          </div>
+
+          <div class="candle c3">
+            <b></b>
+          </div>
+
+          <div class="icing"></div>
+
+          <div class="cake-base"></div>
+
+          <div class="cake-plate"></div>
+
+        </div>
+
+      </div>
+
+
+      <div class="birthday-banner">
+
+        HAPPY BIRTHDAY,
+        <span>MY LOVE</span>
+        ♡
+
+      </div>
+
+
+      <div
+        id="confetti"
+        class="confetti"
+        aria-hidden="true"
+      ></div>
+
+
+      <button
+        class="next-btn"
+        data-next="two"
+        type="button"
+      >
+        Next little surprise
+        <span>→</span>
+      </button>
+
+    </section>
+
+
+
+    <!-- =======================================================
+         STAGE 2 — THEATER
+         ======================================================= -->
+
+    <section
+      class="scene stage stage-two"
+      data-scene="two"
+      aria-label="Cinnamon Roll singing on stage"
+    >
+
+      <div class="curtain left"></div>
+      <div class="curtain right"></div>
+
+      <div class="spotlight"></div>
+
+      <div class="stage-floor"></div>
+
+
+      <div class="theater-sign">
+
+        TONIGHT'S SPECIAL
+        <strong>♡</strong>
+
+      </div>
+
+
+      <div
+        class="music-notes"
+        aria-hidden="true"
+      >
+
+        <span>♪</span>
+        <span>♫</span>
+        <span>♪</span>
+        <span>♬</span>
+
+      </div>
+
+
+      <!-- Supporting animated band -->
+
+      <div class="band">
+
+        <div class="mini-dog drum">
+          <span></span>
+        </div>
+
+        <div class="mini-dog keys">
+          <span></span>
+        </div>
+
+        <div class="mini-dog guitar">
+          <span></span>
+        </div>
+
+      </div>
+
+
+      <!-- Singer -->
+
+      <div class="singer">
+
+        <div class="cinna big stage-cinna">
+
+          <div class="ear ear-l"></div>
+          <div class="ear ear-r"></div>
+
+          <div class="head">
+
+            <i class="eye eye-l"></i>
+            <i class="eye eye-r"></i>
+
+            <i class="cheek cheek-l"></i>
+            <i class="cheek cheek-r"></i>
+
+            <i class="mouth singing">
+              ◡
+            </i>
+
+          </div>
+
+
+          <div class="body">
+
+            <span class="paw mic-hand"></span>
+
+            <span class="paw paw-r"></span>
+
+            <span class="tail"></span>
+
+          </div>
+
+        </div>
+
+
+        <!-- Microphone -->
+
+        <div class="microphone">
+
+          <span class="mic-head"></span>
+
+          <span class="mic-stem"></span>
+
+          <span class="mic-base"></span>
+
+        </div>
+
+      </div>
+
+
+      <div class="lyrics">
+
+        <span>happy</span>
+        birthday
+        <strong>to you!</strong>
+
+      </div>
+
+
+      <button
+        class="next-btn light"
+        data-next="three"
+        type="button"
+      >
+        Make a wish
+        <span>→</span>
+      </button>
+
+    </section>
+
+
+
+    <!-- =======================================================
+         STAGE 3 — BLOW THE CAKE
+         ======================================================= -->
+
+    <section
+      class="scene stage stage-three"
+      data-scene="three"
+      aria-label="Blow the birthday cake"
+    >
+
+      <div class="bokeh"></div>
+
+
+      <div class="cake-closeup">
+
+        <div class="big-cake">
+
+          <div class="layer top"></div>
+
+          <div class="cream"></div>
+
+          <div class="layer mid"></div>
+
+          <div class="cream pink"></div>
+
+          <div class="layer bottom"></div>
+
+          <div class="giant-candle">
+            <i></i>
+          </div>
+
+          <div class="flame"></div>
+
+        </div>
+
+      </div>
+
+
+      <div class="blow-copy">
+
+        <p>
+          Close your eyes…
+        </p>
+
+        <h2>
+          make a wish ✦
+        </h2>
+
+        <span>
+          Blow gently into your microphone,
+          or tap the cake.
+        </span>
+
+      </div>
+
+
+      <button
+        id="blowBtn"
+        class="blow-btn"
+        type="button"
+      >
+        ♡ Blow the candle
+      </button>
+
+
+      <div
+        id="wind"
+        class="wind"
+        aria-hidden="true"
+      ></div>
+
+
+      <div
+        id="wishBurst"
+        class="wish-burst"
+        aria-hidden="true"
+      >
+        ✦
+      </div>
+
+
+      <button
+        class="next-btn"
+        data-next="four"
+        type="button"
+      >
+        One more gift
+        <span>→</span>
+      </button>
+
+    </section>
+
+
+
+    <!-- =======================================================
+         STAGE 4 — BOUQUET + KISS
+         ======================================================= -->
+
+    <section
+      class="scene stage stage-four"
+      data-scene="four"
+      aria-label="Bouquet and kiss"
+    >
+
+      <div class="garden-bg"></div>
+
+      <div class="petals"></div>
+
+
+      <div class="gift-text">
+
+        <span>04</span>
+
+        <h2>
+          A little something for you…
+        </h2>
+
+        <p>
+          Come a little closer.
+        </p>
+
+      </div>
+
+
+      <div class="walkway">
+
+        <div
+          class="walk-cinna"
+          id="walkCinna"
+        >
+
+          <div class="cinna giant">
+
+            <div class="ear ear-l"></div>
+            <div class="ear ear-r"></div>
+
+            <div class="head">
+
+              <i class="eye eye-l"></i>
+              <i class="eye eye-r"></i>
+
+              <i class="cheek cheek-l"></i>
+              <i class="cheek cheek-r"></i>
+
+              <i class="mouth happy">
+                ⌣
+              </i>
+
+            </div>
+
+
+            <div class="body">
+
+              <span class="paw bouquet-hand"></span>
+
+              <span class="paw paw-r"></span>
+
+              <span class="tail"></span>
+
+            </div>
+
+          </div>
+
+
+          <!-- Bouquet -->
+
+          <div class="bouquet">
+
+            <span class="flower f1">✿</span>
+            <span class="flower f2">✿</span>
+            <span class="flower f3">✿</span>
+            <span class="flower f4">✿</span>
+
+            <span class="stem"></span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div
+        id="kissField"
+        class="kiss-field"
+        aria-hidden="true"
+      ></div>
+
+
+      <div class="kiss-message">
+
+        for the most beautiful woman
+        in my world
+        <span>♡</span>
+
+      </div>
+
+
+      <button
+        id="kissBtn"
+        class="next-btn"
+        data-next="book"
+        type="button"
+      >
+        Come here, bebiii
+        <span>♡</span>
+      </button>
+
+    </section>
+
+
+
+    <!-- =======================================================
+         STAGE 5 — PHOTO BOOK
+         ======================================================= -->
+
+    <section
+      class="scene book-scene"
+      data-scene="book"
+      aria-label="Photo book"
+    >
+
+      <div class="book-intro">
+
+        <span>05</span>
+
+        <p>
+          and now… our little memory book
+        </p>
+
+      </div>
+
+
+      <div
+        class="book-wrap"
+        id="bookWrap"
+      >
+
+
+        <!-- =================================================
+             BOOK COVER
+             Replace:
+             assets/book/cover.jpg
+             ================================================= -->
+
+        <div
+          class="book-cover"
+          id="bookCover"
+        >
+
+          <div class="cover-shine"></div>
+
+
+          <div class="cover-frame">
+
+            <img
+              src="assets/book/cover.jpg"
+              alt="Birthday cover photo"
+            >
+
+
+            <div class="cover-title">
+
+              OUR<br>
+
+              <em>beautiful</em><br>
+
+              moments
+
+            </div>
+
+          </div>
+
+
+          <div class="cover-ribbon">
+            ♡
+          </div>
+
+        </div>
+
+
+        <!-- =================================================
+             BOOK PAGES
+             ================================================= -->
+
+        <div class="book-pages">
+
+
+          <!-- LEFT PAGE -->
+
+          <div class="page left-page">
+
+            <div class="page-inner">
+
+              <div class="photo-frame">
+
+                <img
+                  src="assets/book/left.jpg"
+                  alt="Memory photo left page"
+                >
+
+              </div>
+
+
+              <small>
+                one of my favorite memories
+              </small>
+
+            </div>
+
+          </div>
+
+
+          <!-- RIGHT PAGE -->
+
+          <div class="page right-page">
+
+            <div class="page-inner">
+
+              <div class="photo-frame">
+
+                <img
+                  src="assets/book/right.jpg"
+                  alt="Memory photo right page"
+                >
+
+              </div>
+
+
+              <small>
+                and another I keep close
+              </small>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <button
+        id="openBookBtn"
+        class="primary-btn book-btn"
+        type="button"
+      >
+        Open our memories
+        <span>✦</span>
+      </button>
+
+    </section>
+
+
+
+    <!-- =======================================================
+         FINAL PHOTOGRAPH + MESSAGE
+         ======================================================= -->
+
+    <section
+      class="scene final-scene"
+      data-scene="final"
+      aria-label="Final birthday message"
+    >
+
+      <div class="final-stars"></div>
+
+
+      <!-- ===============================================
+           FINAL PHOTO
+           Replace:
+           assets/book/final.jpg
+           =============================================== -->
+
+      <div class="photo-card">
+
+        <div class="photo-frame-final">
+
+          <img
+            src="assets/book/final.jpg"
+            alt="Our final photo"
+          >
+
+        </div>
+
+
+        <div class="photo-caption">
+
+          my favorite person, always ♡
+
+        </div>
+
+      </div>
+
+
+      <!-- FINAL MESSAGE -->
+
+      <div class="final-copy">
+
+        <p class="eyebrow">
+          one last page, from my heart
+        </p>
+
+
+        <h2>
+
+          Happy birthday,<br>
+
+          <em>
+            my gorgeous wife!
+          </em>
+
+          ❤️
+
+        </h2>
+
+
+        <p>
+          I've been so incredibly happy and grateful
+          since you came into my life.
+          Thank you for being my safe place,
+          my home, and my happiness.
+          You deserve every beautiful thing
+          this world has to offer.
+        </p>
+
+
+        <p>
+          All I ever wish for you is good health,
+          genuine happiness, and for this new chapter
+          of your life to bring you closer to your dreams.
+          I will always support u and stand beside you
+          through whatever phase, every dream,
+          and in everything.
+        </p>
+
+
+        <p>
+
+          <strong>
+            Happy 27th Birthday, my love.
+          </strong>
+
+          I love you bebiii more than u know
+          and will always love you. ❤️
+
+        </p>
+
+
+        <div class="signature">
+
+          Forever yours
+          <span>♡</span>
+
+        </div>
+
+      </div>
+
+
+      <!-- Final explosion -->
+
+      <div
+        id="finalExplosion"
+        class="final-explosion"
+        aria-hidden="true"
+      ></div>
+
+
+      <button
+        id="finalBtn"
+        class="primary-btn final-btn"
+        type="button"
+      >
+        Send all my love
+        <span>✦</span>
+      </button>
+
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+
+  <footer class="footer">
+
+    <span>
+      made with love
+    </span>
+
+    <span>
+      ♡
+    </span>
+
+    <span>
+      for your 27th
+    </span>
+
+  </footer>
+
+
+  <!-- =========================================================
+       MUSIC
+       ========================================================= -->
+
+  <audio
+    id="music"
+    src="assets/music/soft-birthday-original.mp3"
+    loop
+    preload="auto"
+  ></audio>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
