@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#8fd8f6" />
+  <title>Hi Babyyy — A Birthday Story</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app" class="app">
+    <div class="grain"></div>
+    <div id="sparkleField" class="sparkle-field" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <div class="brand"><span class="brand-dot"></span> for my babyyy</div>
+      <div class="stage-counter" id="stageCounter">INTRO</div>
+      <button id="musicBtn" class="glass-btn" type="button" aria-label="Toggle music">♫ Music</button>
+    </header>
+
+    <main id="experience" class="experience">
+
+      <!-- INTRO -->
+      <section class="scene scene-intro active" data-scene="0">
+        <div class="intro-orbit"></div>
+        <div class="intro-stars"></div>
+
+        <div class="intro-copy">
+          <p class="eyebrow">a tiny surprise, made with love</p>
+
+          <h1>
+            hi <span>babyyy</span> ♡
+          </h1>
+
+          <p class="sub">
+            I made you a little birthday world.<br>
+            Stay with me until the very last sparkle.
+          </p>
+
+          <button class="primary-btn start-btn" type="button">
+            Open your surprise <span>→</span>
+          </button>
+
+          <p class="hint">
+            tap / click anywhere to continue
+          </p>
+        </div>
+
+        <div class="intro-character-wrap">
+          <div class="halo"></div>
+
+          <div class="character intro-character">
+            <div class="ear ear-left"></div>
+            <div class="ear ear-right"></div>
+
+            <div class="head">
+              <span class="eye eye-l"></span>
+              <span class="eye eye-r"></span>
+              <span class="cheek cheek-l"></span>
+              <span class="cheek cheek-r"></span>
+              <span class="mouth smile"></span>
+            </div>
+
+            <div class="body"></div>
+            <div class="arm arm-l"></div>
+            <div class="arm arm-r"></div>
+            <div class="tail"></div>
+            <div class="bow"></div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- STAGE 1 -->
+      <section class="scene scene-one" data-scene="1">
+
+        <div class="cloud c1"></div>
+        <div class="cloud c2"></div>
+        <div class="cloud c3"></div>
+
+        <div class="moon"></div>
+
+        <div class="stage-copy">
+          <p class="eyebrow">
+            chapter one · make a wish
+          </p>
+
+          <h2>
+            Happy Birthday,<br>
+            <span>mylove!</span> ♡
+          </h2>
+
+          <p>
+            Look who's carrying something sweet just for you...
+          </p>
+        </div>
+
+        <div class="cake-hero">
+          <div class="cake-shadow"></div>
+
+          <div class="cake">
+
+            <div class="candle cnd1">
+              <i></i>
+            </div>
+
+            <div class="candle cnd2">
+              <i></i>
+            </div>
+
+            <div class="candle cnd3">
+              <i></i>
+            </div>
+
+            <div class="cake-top"></div>
+
+            <div class="cake-cream cream-a"></div>
+            <div class="cake-cream cream-b"></div>
+
+            <div class="berry b1"></div>
+            <div class="berry b2"></div>
+            <div class="berry b3"></div>
+
+          </div>
+        </div>
+
+        <div class="character stage-character hold-cake">
+
+          <div class="ear ear-left"></div>
+          <div class="ear ear-right"></div>
+
+          <div class="head">
+            <span class="eye eye-l"></span>
+            <span class="eye eye-r"></span>
+            <span class="cheek cheek-l"></span>
+            <span class="cheek cheek-r"></span>
+            <span class="mouth smile"></span>
+          </div>
+
+          <div class="body"></div>
+          <div class="arm arm-l"></div>
+          <div class="arm arm-r"></div>
+          <div class="tail"></div>
+          <div class="bow"></div>
+
+        </div>
+
+        <div id="confettiOne" class="confetti"></div>
+
+      </section>
+
+
+      <!-- STAGE 2 -->
+      <section class="scene scene-two" data-scene="2">
+
+        <div class="curtain curtain-left"></div>
+        <div class="curtain curtain-right"></div>
+
+        <div class="theater-top">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="spotlight"></div>
+
+        <div class="banner">
+          CINNAMOROLL'S
+          <b>BIRTHDAY BASH!</b>
+        </div>
+
+        <div class="music-note n1">♪</div>
+        <div class="music-note n2">♫</div>
+        <div class="music-note n3">♩</div>
+
+        <div class="band band-left">
+
+          <div class="tiny-dog">
+            <span class="tiny-ear tl"></span>
+            <span class="tiny-ear tr"></span>
+            <span class="tiny-head"></span>
+          </div>
+
+          <div class="drum"></div>
+
+        </div>
+
+        <div class="band band-right">
+
+          <div class="tiny-dog">
+            <span class="tiny-ear tl"></span>
+            <span class="tiny-ear tr"></span>
+            <span class="tiny-head"></span>
+          </div>
+
+          <div class="accordion"></div>
+
+        </div>
+
+        <div class="sax">♪</div>
+
+        <div class="singer">
+
+          <div class="mic-stand">
+            <div class="mic"></div>
+            <div class="mic-line"></div>
+          </div>
+
+          <div class="character singer-character">
+
+            <div class="ear ear-left"></div>
+            <div class="ear ear-right"></div>
+
+            <div class="head">
+              <span class="eye eye-l"></span>
+              <span class="eye eye-r"></span>
+              <span class="cheek cheek-l"></span>
+              <span class="cheek cheek-r"></span>
+              <span class="mouth singing-mouth"></span>
+            </div>
+
+            <div class="body"></div>
+            <div class="arm arm-l"></div>
+            <div class="arm arm-r"></div>
+            <div class="tail"></div>
+            <div class="bow"></div>
+
+          </div>
+
+          <div class="bowtie-big"></div>
+
+        </div>
+
+        <div class="lyric">
+          ♪ happy birthday to you ♪
+        </div>
+
+      </section>
+
+
+      <!-- STAGE 3 -->
+      <section class="scene scene-three" data-scene="3">
+
+        <div class="blow-bg"></div>
+
+        <div class="giant-cake-wrap">
+
+          <div class="giant-cake">
+
+            <div class="giant-candle gc1">
+              <i></i>
+            </div>
+
+            <div class="giant-candle gc2">
+              <i></i>
+            </div>
+
+            <div class="giant-candle gc3">
+              <i></i>
+            </div>
+
+            <div class="giant-candle gc4">
+              <i></i>
+            </div>
+
+            <div class="giant-top"></div>
+
+            <div class="giant-layer l1"></div>
+            <div class="giant-layer l2"></div>
+            <div class="giant-layer l3"></div>
+
+            <div class="cream-drip"></div>
+
+            <div class="cake-lettering">
+              MAKE A WISH ✦
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="blow-character">
+
+          <div class="character">
+
+            <div class="ear ear-left"></div>
+            <div class="ear ear-right"></div>
+
+            <div class="head">
+              <span class="eye eye-l"></span>
+              <span class="eye eye-r"></span>
+              <span class="cheek cheek-l"></span>
+              <span class="cheek cheek-r"></span>
+              <span class="mouth blow-mouth"></span>
+            </div>
+
+            <div class="body"></div>
+            <div class="arm arm-l"></div>
+            <div class="arm arm-r"></div>
+            <div class="tail"></div>
+            <div class="bow"></div>
+
+          </div>
+
+        </div>
+
+        <div class="blow-prompt">
+
+          <p class="eyebrow">
+            chapter three · your wish
+          </p>
+
+          <h2>
+            Blow the candles,
+            <span>babyyy!</span>
+          </h2>
+
+          <button id="blowBtn" class="primary-btn" type="button">
+            ✦ Blow! ✦
+          </button>
+
+          <p class="hint">
+            press the button — or just tap the screen
+          </p>
+
+        </div>
+
+        <div id="wind" class="wind"></div>
+
+      </section>
+
+
+      <!-- STAGE 4 -->
+      <section class="scene scene-four" data-scene="4">
+
+        <div class="garden-sky"></div>
+
+        <div class="heart h1">♥</div>
+        <div class="heart h2">♥</div>
+        <div class="heart h3">♥</div>
+
+        <div class="walk-copy">
+
+          <p class="eyebrow">
+            chapter four · come closer
+          </p>
+
+          <h2>
+            A little something<br>
+            <span>for you.</span>
+          </h2>
+
+        </div>
+
+        <div class="bouquet">
+
+          <div class="flowers">
+            <i>✿</i>
+            <i>✽</i>
+            <i>✿</i>
+            <i>✾</i>
+            <i>✿</i>
+          </div>
+
+          <div class="stems"></div>
+          <div class="wrap"></div>
+
+        </div>
+
+        <div class="walker">
+
+          <div class="character walk-character">
+
+            <div class="ear ear-left"></div>
+            <div class="ear ear-right"></div>
+
+            <div class="head">
+              <span class="eye eye-l"></span>
+              <span class="eye eye-r"></span>
+              <span class="cheek cheek-l"></span>
+              <span class="cheek cheek-r"></span>
+              <span class="mouth smile"></span>
+            </div>
+
+            <div class="body"></div>
+            <div class="arm arm-l"></div>
+            <div class="arm arm-r"></div>
+            <div class="tail"></div>
+            <div class="bow"></div>
+
+          </div>
+
+        </div>
+
+        <div id="kissLayer" class="kiss-layer"></div>
+
+        <div class="kiss-text">
+          mwah! ♡
+        </div>
+
+      </section>
+
+
+      <!-- STAGE 5 -->
+      <section class="scene scene-five" data-scene="5">
+
+        <div class="bookroom">
+
+          <div class="floating-petal p1">✦</div>
+          <div class="floating-petal p2">✧</div>
+          <div class="floating-petal p3">✿</div>
+
+          <div class="book" id="book">
+
+            <div class="book-cover">
+
+              <div class="cover-inner">
+
+                <span class="cover-small">
+                  a little book of
+                </span>
+
+                <strong>
+                  YOU ♡
+                </strong>
+
+                <span class="cover-small">
+                  happy birthday, my love
+                </span>
+
+                <img
+                  src="assets/final-photo.png"
+                  alt="Your photo placeholder"
+                  class="cover-photo"
+                >
+
+                <button
+                  id="openBook"
+                  class="primary-btn"
+                  type="button"
+                >
+                  Open our page →
+                </button>
+
+              </div>
+
+            </div>
+
+
+            <div class="page page-left">
+
+              <div class="page-paper">
+
+                <span class="page-label">
+                  chapter 27
+                </span>
+
+                <h3>
+                  For the girl<br>
+                  who makes life<br>
+                  <em>beautiful.</em>
+                </h3>
+
+                <div class="mini-sparkles">
+                  ✦　✧　♡　✧　✦
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="page page-right">
+
+              <div class="page-paper right-paper">
+
+                <img
+                  src="assets/final-photo.png"
+                  alt="Replace this with your final photo"
+                  class="final-photo"
+                >
+
+                <span class="photo-note">
+                  replace final-photo.png with your favorite photo ♡
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="letter" id="letter">
+
+            <div class="letter-paper">
+
+              <p class="letter-kicker">
+                to my gorgeous wife,
+              </p>
+
+              <h2>
+                Happy birthday, my love. ❤️
+              </h2>
+
+              <p>
+                I've been so incredibly happy and grateful since you came
+                into my life. Thank you for being my safe place, my home,
+                and my happiness.
+              </p>
+
+              <p>
+                You deserve every beautiful thing this world has to offer.
+                All I ever wish for you is good health, genuine happiness,
+                and for this new chapter of your life to bring you closer
+                to your dreams.
+              </p>
+
+              <p>
+                I will always support you and stand beside you through
+                whatever phase, every dream, and in everything.
+              </p>
+
+              <p>
+                <b>Happy 27th Birthday, my love.</b>
+                I love you bebiii more than you know and will always love you. ❤️
+              </p>
+
+              <div class="signature">
+                forever yours ♡
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div id="finalExplosion" class="final-explosion"></div>
+
+        <button
+          id="replayBtn"
+          class="replay-btn"
+          type="button"
+        >
+          ↻ Replay from the beginning
+        </button>
+
+      </section>
+
+    </main>
+
+
+    <nav
+      class="progress"
+      aria-label="Birthday story stages"
+    >
+      <button class="dot active" data-go="0" aria-label="Intro"></button>
+      <button class="dot" data-go="1" aria-label="Cake"></button>
+      <button class="dot" data-go="2" aria-label="Song"></button>
+      <button class="dot" data-go="3" aria-label="Wish"></button>
+      <button class="dot" data-go="4" aria-label="Kiss"></button>
+      <button class="dot" data-go="5" aria-label="Letter"></button>
+    </nav>
+
+
+    <div class="swipe-tip" id="swipeTip">
+      tap / swipe to continue
+    </div>
+
+
+    <audio
+      id="music"
+      src="assets/birthday-melody.mp3"
+      preload="auto"
+      loop
+    ></audio>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
